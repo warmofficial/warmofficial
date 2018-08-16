@@ -80,7 +80,7 @@ button{
 	}
 
 button:focus
-	{background:#808080;color:#000}
+	{background:red;color:white  }
 
 button,
 p,
@@ -91,13 +91,13 @@ button,
 .home{
 	background:transparent;
 	padding:14px;
-	color:#a3a3a3;
+  	color:white;
 	vertical-align:middle
 	}
 
 button:hover,
 .home:hover
-	{background:#4d4d4d;color:#fff}
+	{background:#0c5461;color:#fff}
 
 h1,
 h2
@@ -157,7 +157,7 @@ header p
 	{width:120px}
 
 .content_list
-	{background:#fff;width:250px;top:45px}
+	{background:#ff5a42;width:250px;top:45px}
 
 .content_list.left,
 .content_list.left:before
@@ -180,7 +180,7 @@ header p
 	top:-8px;
 	border-left:8px solid transparent;
 	border-right:8px solid transparent;
-	border-bottom:8px solid #fff
+	border-bottom:8px solid #ff5a42
 	}
 
 .container_right
@@ -273,7 +273,7 @@ h2:after{
 	width:50px;
 	height:50px;
 	left:50%;
-	border-right:1px solid #fff;
+	border-right:1px solid #fff; /*arrows*/
 	border-bottom:1px solid #fff;
 	animation:buble 1s linear infinite alternate
 	}
