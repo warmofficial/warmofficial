@@ -1,0 +1,329 @@
+@charset "utf8";
+
+*,
+*:after,
+*:before,
+html {
+    box-sizing: border-box;
+  }
+
+body{
+  font-family: "Arial", sans-serif;
+  color: white;
+  background-color: green;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align:center;
+
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 800;
+}
+h2 {
+  text-align: center;
+}
+p#bruh, p#bruh2, p#bruh3, p#bruh4 {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 20px;
+  text-align: left;
+  font-size: large;
+}
+
+p#bruh5, p#bruh6 {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 10px;
+  text-align: center;
+  font-size: large;
+}
+img#theImage {
+  width: 10%;
+  height: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img#theImage2 {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+p.solid {
+  border-style: solid;
+}
+a
+	{display:block;text-decoration:none}
+
+
+body,
+button
+	{font-family:Tahoma,Geneva,sans-serif;font-style:normal;font-weight:400}
+
+body,
+html
+	{height:100%}
+
+body,
+h1,
+p
+	{margin:0;padding:0}
+
+button{
+	margin:0;
+	border:none;
+	outline:none;
+	cursor:pointer
+	}
+
+button:focus
+	{background:#808080;color:#000}
+
+button,
+p,
+.home
+	{font-size:14px}
+
+button,
+.home{
+	background:transparent;
+	padding:14px;
+	color:#a3a3a3;
+	vertical-align:middle
+	}
+
+button:hover,
+.home:hover
+	{background:#4d4d4d;color:#fff}
+
+h1,
+h2
+	{font-size:30px}
+
+[class*="container"]
+	{display:block;
+    position:relative;
+    float:left;
+  }
+
+[class*="content"]
+	{display:none;
+    position:absolute;
+    z-index:10}
+
+.home,
+#btnMenu
+	{position:relative;
+    float:left;
+  }
+
+#btnMenu,
+.fa-close,
+.acc
+	{display:none}
+
+.content_list:before,
+h2:before,
+h2:after
+	{content:"";display:block;position:absolute}
+
+header{
+	width:100%;
+	padding:16px;
+	display:block;
+	position:absolute;
+	z-index: 5;
+	box-shadow:0 8px 6px -6px #000
+	}
+
+header h1,
+header p
+	{letter-spacing:5px;text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+
+#sticky_nav{
+	background:#000;
+	width:100%;
+	top:-45px;
+	display:block;
+	position: fixed;
+	z-index:999;
+	transition:all .5s ease;
+	}
+
+.btnList
+	{width:120px}
+
+.content_list
+	{background:#fff;width:250px;top:45px}
+
+.content_list.left,
+.content_list.left:before
+	{left:0}
+
+.content_list.center
+	{left:-65px}
+
+.content_list.center:before
+	{left:50%;
+    transform:translate(-50%,0);
+  }
+
+.content_list.right,
+.content_list.right:before
+	{right:0}
+
+.content_list:before{
+	width:8px;
+	top:-8px;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-bottom:8px solid #fff
+	}
+
+.container_right
+	{float:right}
+
+.content_search
+	{background:#000;top:0;right:40px}
+
+input[type=text]{
+	background:#fff;
+	width:100%;
+	font-size:22px;
+	border-radius:5px
+	}
+
+input[type=text]:focus
+	{outline:none}
+
+@media (max-width:683px){
+	#btnMenu
+		{display:block}
+
+	.container_menu
+		{display:none}
+
+	.container_list
+		{width:100%}
+
+	.btnList
+		{width:100%;box-shadow:0 2px 2px -2px #333}
+
+	.drop
+		{display:none}
+
+	.acc
+		{display:inline-block}
+
+	.content_list{
+		width:100%;
+		top:0;
+		position:relative;
+		float:left
+		}
+
+	.content_list.left,
+	.content_list.center,
+	.content_list.right
+		{left:0;right:0}
+
+	.content_list.left:before,
+	.content_list.center:before,
+	.content_list.right:before
+		{left:50%;transform:translate(-50%,0)}
+
+	/* In small screen, when the "Button Nav" clicked, the "container_menu" will be replaced with the "show_menu" */
+
+	.show_menu{
+		background:#1a1a1a;
+		width:100%;
+		top:45px;
+		display:block;
+		position:absolute
+		}
+	}
+
+.title, .blank{
+	width:100%;
+	min-height:100%;
+	/*display:block;
+  background-image: url("https://media.giphy.com/media/l4FGDiC9RCLrblZ2E/source.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+	position: relative;*/
+	}
+
+h2{
+	width:100%;
+	top:50%;
+	left:0;
+	margin:0;
+	padding:0 8px;
+	display:block;
+	position:absolute;
+	color:#fff;
+	transform:translate(0,-50%)
+	}
+
+h2:before,
+h2:after{
+	width:50px;
+	height:50px;
+	left:50%;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	animation:buble 1s linear infinite alternate
+	}
+
+h2:before
+	{bottom:-100px}
+
+h2:after
+	{bottom:-110px}
+
+@keyframes buble{
+	from{transform:rotate(45deg) translate(-50%,0) scale(.8,.8)}
+	to{transform:rotate(45deg) translate(-50%,0) scale(1,1)}
+	}
+
+
+/*
+When the "Button Nav" & "Button Search" clicked, icon menu will be toggle to "visible" & "hidden".
+When the "Button Search" clicked, the "content_search" will be replaced with the "show_search".
+When the "Button List" clicked, the "content_list" will be replaced with the "show_list".
+*/
+
+.visible
+	{display:inline-block}
+
+.hidden
+	{display:none}
+
+[class*="show"]
+	{display:block}
+
+.show_list
+	{padding:20px 0;animation:height 1s ease}
+
+@keyframes height{
+	from{padding:0;opacity:0}
+	to{padding:20px 0;opacity:1}
+	}
+
+.show_search form
+	{width:150px;padding:6px;animation:width 1s ease}
+
+@keyframes width{
+	from{width:0;opacity:0}
+	to{width:150px;opacity:1}
+	}
