@@ -51,16 +51,32 @@ li.dropdown {
 }
 
 
+/* start of our code  limegreen, darkgreen */
 
-/* start of our code */
+html{
+
+  background-image: linear-gradient(to right, limegreen 0%, darkgreen 100%),url("http://www.tokkoro.com/picsup/2143134-green-natural-background.jpg");
+  background-blend-mode: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align:center;
+}
 
 header{
-	width: 98.3%;
+	width: 100%;
 	padding:16px;
 	display:block;
 	position:relative;
 	z-index: 5;
 	box-shadow:0 8px 6px -6px #000
+
 	}
 
 header h1,
@@ -88,22 +104,13 @@ body{
   font-family: "Arial", sans-serif;
   color: white;
 
-  background-image: url("http://www.tokkoro.com/picsup/2143134-green-natural-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align:center;
 
 }
 
 
 
 .blank{
+
   width:100%;
   min-height:100%;
   display:block;
@@ -121,6 +128,10 @@ h2 {
   text-align: center;
 }
 p#bruh, p#bruh2, p#bruh3, p#bruh4 {
+  padding-top: 0px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+  padding-left: 100px;
   text-align: center;
   font-size: 150%;
 }
@@ -133,4 +144,8 @@ p#bruh5, p#bruh6 {
 p{
   border-style: hidden;
   border-width: 50px;
+}
+
+*{
+  box-sizing: border-box;
 }
