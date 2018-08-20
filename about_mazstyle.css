@@ -1,0 +1,119 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-blend-mode: darken;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 6;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* start of our code */
+
+header{
+	width: 100%;
+	padding:16px;
+	display:block;
+	position:relative;
+	z-index: 5;
+	box-shadow:0 8px 6px -6px #000
+	}
+
+header h1,
+header p
+	{letter-spacing:3px;text-shadow:-1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;}
+
+    .test{
+      width:100%;
+      min-height:200%;
+      display:block;
+      position:relative;
+      float:left
+    }
+
+
+    .title{
+      width:100%;
+      min-height:100%;
+      display:block;
+      position:relative;
+      float:left
+    }
+
+  body{
+    font-family: "Arial", sans-serif;
+    color: white;
+
+
+    background-image:linear-gradient(to right, #DF3D58 0%, #E87A8D 100%),url("http://www.qygjxz.com/data/out/97/4787540-gray-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:left;
+
+  }
+p#name {
+  font-size: 200%;
+}
+p#first, p#second {
+  font-size: 125%;
+}
+
+  h1 {
+    text-align: center;
+    color: black;
+    font-size: 800;
+  }
+.info {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 100px;
+}
