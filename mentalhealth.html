@@ -28,7 +28,7 @@
     		</div>
     		<div class="container_list">
     			<button class="btnList" onclick="openList('2')">
-    				<span class="drop">Dropdown 2</span>
+    				<span class="drop"> Kim Swift </span>
     				<span class="acc">Accordion 2</span>
     			</button>
     			<div class="content_list left" id="thisList_2">
@@ -37,7 +37,7 @@
     		</div>
     		<div class="container_list">
     			<button class="btnList" onclick="openList('3')">
-    				<span class="drop">Dropdown 3</span>
+    				<span class="drop"> Courtney </span>
     				<span class="acc">Accordion 3</span>
     			</button>
     			<div class="content_list center" id="thisList_3">
@@ -73,7 +73,7 @@
     		</button>
     	</div>
       <div>
-        <audio id="playlist" controls>
+        <audio id="playlist">
           <source src="Yuri.mp3" id="mp3Source" type="audio/mpeg" />
           <source src="howl.mp3" id="mp3Source" type="audio/mpeg" />
           <source src="killua.mp3" id="mp3Source" type="audio/mpeg" />
@@ -84,6 +84,11 @@
           <source src="clair.mp3" id="mp3Source" type="audio/mpeg" />
           <p>If you are seeing this, the audio player is unsupported in this browser.</p>
         </audio>
+        <div>
+            <button onclick="document.getElementById('playlist').play()">Play Music</button>
+            <button onclick="document.getElementById('playlist').pause()">Pause</button>
+            <button onclick="document.getElementById('playlist').muted=!document.getElementById('playlist').muted">Mute/Unmute</button>
+        </div>
       </div>
     </nav>
 
