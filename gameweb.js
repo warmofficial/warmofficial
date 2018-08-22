@@ -1,13 +1,14 @@
 window.onscroll = function(){
-   scrollFunction()
+   scrollFunction();
+   openList();
 }
 function scrollFunction(){
    var sn = document.getElementById("sticky_nav");
       if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-         sn.style.top = "0"
+         sn.style.top = "0";
       }
       else{
-         sn.style.top = "-45px"
+         sn.style.top = "-63px";
       }
 }
 
@@ -17,20 +18,21 @@ function openList(x){
       for(i = 0; i < cL.length; i++){
          var OcL = cL[i];
             if(cL[i] != document.getElementById("thisList_" + x)){
-               OcL.classList.remove("show_list")
+               OcL.classList.remove("show_list");
             }
       }
-   document.getElementById("thisList_" + x).classList.toggle("show_list")
+   document.getElementById("thisList_" + x).classList.toggle("show_list");
 }
+
 
 function openSearch(){
    document.getElementById("thisSearch").classList.toggle("show_search");
    document.getElementById("btnSearch").getElementsByTagName("i")[0].classList.toggle("hidden");
-   document.getElementById("btnSearch").getElementsByTagName("i")[1].classList.toggle("visible")
+   document.getElementById("btnSearch").getElementsByTagName("i")[1].classList.toggle("visible");
 }
 
 function openMenu(){
    document.getElementById("thisMenu").classList.toggle("show_menu");
    document.getElementById("btnMenu").getElementsByTagName("i")[0].classList.toggle("hidden");
-   document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible")
+   document.getElementById("btnMenu").getElementsByTagName("i")[1].classList.toggle("visible");
 }
