@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="jade.css" type="text/css">
+    <script src="jade.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    	<div class="container_left">
+    		<a class="home" href="gameweb.html"> <!--style="margin:0 auto; display: block;" -->
+    			<img id="homebutton" src="warm6.png">
+    		</a>
+    		<button id="btnMenu" onclick="openMenu()">
+    			<i class="fa fa-bars"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+    	<div class="container_menu" id="thisMenu">
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('1')">
+    				<span class="drop">Mental Health</span>
+    			</button>
+    			<div class="content_list left" id="thisList_1">
+    				<p><a href="mentalhealthinfo.html" class="button">About</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('2')">
+    				<span class="drop">Inspiration</span>
+    			</button>
+    			<div class="content_list left" id="thisList_2">
+    				<p><a href="wit.html">Kim Swift</a><br>
+            <a href="https://girlswhocode.com/" class="button">Girls Who Code</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('3')">
+    				<span class="drop" id="lala"> Meet The Creators </span>
+    			</button>
+    			<div class="content_list center" id="thisList_3">
+    				<p><a href="aboutcourtney.html">Courtney Ng</a><br><a href="about_maz.html">Mazal Zebak</a><br><a href="jade.html">Jade Shen</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('4')">
+    				<span class="drop">About The Game</span>
+    				<span class="acc">Accordion 4</span>
+    			</button>
+    			<div class="content_list right" id="thisList_4">
+    				<p><a href="info.html">Information</a><br><a href="cause.html">Our Cause</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('5')">
+    				<span class="drop">Credits</span>
+    				<span class="acc">Accordion 5</span>
+    			</button>
+    			<div class="content_list right" id="thisList_5">
+    				<p><a href="artist.html">The Artist</a><br><a href="help.html">Helpers</a></p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="container_right">
+    		<div class="content_search" id="thisSearch">
+    			<form><input type="text" placeholder="Search..."></form>
+    		</div>
+    		<button id="btnSearch" onclick="openSearch()">
+    			<i class="fa fa-search"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+      <div>
+        <audio id="playlist">
+          <source src="howl.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="killua.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="gin.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="rain.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="river.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="UT.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="clair.mp3" id="mp3Source" type="audio/mpeg" />
+          <p>If you are seeing this, the audio player is unsupported in this browser.</p>
+        </audio>
+        <div>
+            <button onclick="document.getElementById('playlist').play()">Play Music</button>
+            <button onclick="document.getElementById('playlist').pause()">Pause</button>
+            <button onclick="document.getElementById('playlist').muted=!document.getElementById('playlist').muted">Mute/Unmute</button>
+        </div>
+      </div>
+    </head>
+<body>
+  <!--<div class="fab">
+    <span class="fab-action-button">
+        <i class="fab-action-button__icon"></i>
+    </span>
+  <ul class="fab-buttons">
+    <li class="fab-buttons__item">
+      <a href="https://www.facebook.com/profile.php?id=100007536708713&ref=br_rs" target="_blank" class="fab-buttons__link">
+        <i class="icon-material icon-material_fb"></i>
+      </a>
+    </li>
+    <li class="fab-buttons__item">
+      <a href="https://www.instagram.com/jjadeshen/" class="fab-buttons__link" target="_blank">
+        <i class="icon-material icon-material_in"></i>
+      </a>
+    </li>
+    <li class="fab-buttons__item">
+      <a href="https://www.linkedin.com/in/jade-shen-888894169/" class="fab-buttons__link" target="_blank">
+        <i class="icon-material icon-material_li"></i>
+      </a>
+    </li>
+  </ul>
+</div>-->
+<div class="me">
+	<span id="right"><a href="https://www.instagram.com/jjadeshen/" target="blank_"><img src="insta.png"></a></span>
+  <span id="left"><a href="https://www.facebook.com/profile.php?id=100007536708713&ref=br_rs" target="blank_"><img src="fb.png"></a></span>
+  <span id="center"><a href="https://www.linkedin.com/in/jade-shen-888894169/" target="blank_"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png"></a></span>
+</div>
+</body>
+<div class = "title">
+  <header>
+    <h1> Jade Shen </h1>
+    <p><strong> Meet the Creators</strong></p>
+  </header>
+</div>
+<div class="blank">
+  <div class="oh"> <!-- o -->
+    <p class="about"><img src="jsh.jpg" id="boi"> Jade Shen is a Bronx Science Junior.<br>From a robotics programmer to an ice skater fanatic, Jade Shen has always strived to break the limits placed on her. As a young female in STEM, she plans to put forth only her best work!
+    <br><br>
+  "Warm" was a game she and two others decided to create to promote mental health. As an adolscent female, she has seen the effects mental health could have on people firsthand. She believes that by creating this game, she will be able to spread more awareness about mental health issues, and teach others that their happiness matters.</p>
+  </div> <!-- o -->
+
+</div>
+</html>
