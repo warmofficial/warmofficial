@@ -38,6 +38,11 @@ a.button:visited,{
     text-decoration: none;
     color: #0c5461;
 }
+a#ply:hover,
+a#ply:link,
+a#ply:visited {
+  color: white;
+}
 h1 {
   text-align: center;
   color: black;
@@ -51,7 +56,7 @@ p#bruh {
   border-color: transparent;
   border-width: 50px;
   text-align: center;
-  font-size: 110%;
+  font-size: 210%;
 }
 img#theImage {
   width: 10%;
@@ -76,7 +81,12 @@ a {
   text-decoration:none;
 }
 
-
+img#gm{
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
 body,
 button
 	{font-family:Tahoma,Geneva,sans-serif;font-style:normal;font-weight:400}
