@@ -26,7 +26,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   text-align:center;
-
+  overflow: hidden;
 }
 
 h1 {
@@ -282,16 +282,19 @@ body {
   right:20px;
   opacity:1;
   visibility:visible;
+	z-index:80;
 }
 .me:hover span#right{
   right:70px;
   opacity:1;
   visibility: visible;
+	z-index:70;
 }
 .me:hover span#center{
   right:120px;
   opacity:1;
   visibility: visible;
+	z-index:60;
 }
 
 
@@ -304,7 +307,6 @@ body {
 	position:absolute;
 	color:#008080;
 	font-size:16px;
-	z-index:-1;
 	opacity:0;
 	visibility:hidden;
 	transition:all .5s ease
