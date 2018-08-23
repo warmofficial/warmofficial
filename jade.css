@@ -24,7 +24,6 @@ body{
   background-attachment: fixed;
   */
   text-align:center;
-
 }
 }
 h1 {
@@ -326,6 +325,7 @@ header p
   box-sizing: border-box;
 }
 h1 {
+    color: #800080;
     display: block;
     font-size: 2em;
     -webkit-margin-before: 0.67em;
@@ -354,7 +354,6 @@ h1 {
   width:40%;
   height:40%;
   display: block;
-  padding-left: 130px;
   position: relative;
   float: left;
 }
@@ -382,6 +381,7 @@ p {
     height: 500px;
     position: relative;
     background: transparent;
+    overflow: hidden;
 }
 
 .blank:before {
@@ -396,5 +396,5 @@ p {
 .about {
     text-align: center;
     font-size: 4em;
-    color: ##800080;
+    color: #800080;
 }
